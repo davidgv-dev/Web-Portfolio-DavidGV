@@ -1,0 +1,164 @@
+@media (max-width: 327px) {
+  .lenguajes {
+    margin-top: -5vh;
+  }
+
+  #lenguajes-1 {
+    margin-bottom: 6vh;
+  }
+}
+
+.night {
+  visibility: hidden;
+  margin: 0;
+  margin-top: -9vh;
+}
+
+.lenguajes {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.lenguajes li {
+  list-style-type: none;
+}
+
+.lenguajes img {
+  height: 5vh;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #292929;
+  padding-bottom: 3vh;
+  padding-right: 25vw;
+  padding-left: 25vw;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header li {
+  list-style-type: none;
+}
+
+main {
+  background-color: #9e9e9e;
+  min-height: 120vh;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 10%;
+  margin-top: 15%;
+}
+
+.img-redes {
+  opacity: 100%;
+  height: 6vh;
+  transition: opacity 0.3s ease;
+}
+
+.img-redes:hover {
+  opacity: 60%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #292929;
+}
+
+.img-perfil {
+  display: flex;
+  margin: auto;
+  margin-top: 4vh;
+
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-top-color: #9e9e9e;
+  border-left-color: #9e9e9e;
+  border-right-color: #9e9e9e;
+  border-width: 0.6vh;
+  object-fit: cover;
+}
+
+@media (max-height: 500px) {
+  .img-perfil {
+    width: 30%;
+  }
+  .lenguajes img {
+    height: 10vh;
+  }
+  .img-redes {
+    height: 15vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .night {
+    margin-top: -2vh;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  .night {
+    visibility: visible;
+    margin-bottom: -14vh;
+    margin-top: 12vh;
+    margin-left: 25vw;
+    color:#dededf;
+  }
+
+  #lenguajes-1 {
+    margin-bottom: -30vh;
+    margin-top: 16vh;
+    margin-left: -10vw;
+  }
+
+  #lenguajes-2 {
+    margin-bottom: -28vh;
+    margin-top: 32vh;
+    margin-left: -10vw;
+  }
+
+  main {
+    min-height: 108vh;
+  }
+
+  .App {
+    flex-direction: column;
+  }
+
+  .App-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-perfil {
+    width: 15%;
+    margin-left: 5%;
+
+    border-right-color: #cdcdcd;
+    border-bottom-color: #9e9e9e;
+  }
+
+  .redes-div {
+    margin-left: -37%;
+  }
+}
