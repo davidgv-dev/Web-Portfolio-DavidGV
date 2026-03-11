@@ -170,7 +170,66 @@ function App() {
       </header>
 
       <main>
-        <h1>Buenas tardes</h1>
+        <div id="contenedor-principal">
+          <div>
+
+            <h2 class="about-title">Sobre mí</h2>
+
+            <p class="about-text">
+              I'm a Full Stack Web Developer focused on building clean,
+              scalable and high-performance web applications. I enjoy
+              creating user-friendly interfaces while ensuring the
+              backend remains efficient and maintainable.
+            </p>
+
+            <p class="about-text">
+              My main stack includes JavaScript, React, PHP and modern
+              web technologies. I'm passionate about continuous learning
+              and building projects that combine design, performance
+              and usability.
+            </p>
+
+            <p class="about-text">
+              Currently I'm focused on improving my skills in full-stack
+              development while building personal projects and exploring
+              new technologies.
+            </p>
+
+          </div>
+          <div id="form-div">
+
+            <form class="contact-form">
+              <h1>Contacto</h1>
+              <p>¿Tienes una pregunta o propuesta, o solo quieres saludar? Adelante.</p>
+
+              <div class="field">
+
+                <label for="name">Nombre o razón social</label>
+                <input type="text" id="name" name="name" placeholder="Introduce tu nombre"></input>
+
+              </div>
+
+              <div class="field">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu correo"></input>
+
+              </div>
+
+              <div class="field">
+
+                <label for="message">Tu mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí"></textarea>
+
+              </div>
+
+              <button type="submit">Enviar →</button>
+            </form>
+
+          </div>
+        </div>
+
+
       </main>
     </div>
   );
