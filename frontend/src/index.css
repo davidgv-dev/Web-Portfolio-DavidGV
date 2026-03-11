@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Harabara';
+  src: url('./fuentes/HarabaraMais.otf') format('opentype');
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-family: 'Harabara', 'Roboto', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

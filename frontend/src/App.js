@@ -26,53 +26,80 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="perfil">
         <h1 class="night">David, desarrollador web full stack</h1>
+        
 
           <ul className="lenguajes" id="lenguajes-1">
             <li>
-              <img src={js96} alt="Icono Javascript"/>
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+                <img src={js96} alt="Icono Javascript"/>
+              </a>
             </li>
             <li>
-              <img src={react96} alt="Icono React"/>
+              <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+                <img src={react96} alt="Icono React"/>
+              </a>
             </li>
             <li>
-              <img src={php96} alt="Icono Javascript"/>
+              <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
+                <img src={php96} alt="Icono PHP"/>
+              </a>
             </li>
             <li>
-              <img src={laravel96} alt="Icono React"/>
+              <a href="https://laravel.com/" target="_blank" rel="noopener noreferrer">
+                <img src={laravel96} alt="Icono Laravel"/>
+              </a>
             </li>
             <li>
-              <img src={html96} alt="Icono Javascript"/>
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                <img src={html96} alt="Icono HTML"/>
+              </a>
             </li>
             <li>
-              <img src={css96} alt="Icono React"/>
+              <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+                <img src={css96} alt="Icono CSS"/>
+              </a>
             </li>
           </ul>
 
           <ul className="lenguajes" id="lenguajes-2">
             <li>
-              <img src={github96_lang} alt="Icono Javascript"/>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <img src={github96_lang} alt="Icono GitHub"/>
+              </a>
             </li>
             <li>
-              <img src={git96} alt="Icono React"/>
+              <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+                <img src={git96} alt="Icono Git"/>
+              </a>
             </li>
             <li>
-              <img src={sql96} alt="Icono Javascript"/>
+              <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+                <img src={sql96} alt="Icono SQL"/>
+              </a>
             </li>
             <li>
-              <img src={docker96} alt="Icono React"/>
+              <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+                <img src={docker96} alt="Icono Docker"/>
+              </a>
             </li>
             <li>
-              <img src={aws96} alt="Icono Javascript"/>
+              <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+                <img src={aws96} alt="Icono AWS"/>
+              </a>
             </li>
             <li>
-              <img src={firebase96} alt="Icono React"/>
+              <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">
+                <img src={firebase96} alt="Icono Firebase"/>
+              </a>
             </li>
           </ul>
+          
 
 
         <img src={imgPerfil} className="img-perfil" alt="imagen perfil" />
+        <h1 class="header-david">David, desarrollador web full stack</h1>
       </div>
       
 
