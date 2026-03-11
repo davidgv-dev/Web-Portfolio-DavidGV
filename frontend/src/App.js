@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <div className="perfil">
-        <h1 class="night">David, desarrollador web full stack</h1>
+        <h1 class="header-david-bigscreen">David, desarrollador web full stack</h1>
         
 
           <ul className="lenguajes" id="lenguajes-1">
@@ -176,23 +176,43 @@ function App() {
             <h2 class="about-title">Sobre mí</h2>
 
             <p class="about-text">
-              I'm a Full Stack Web Developer focused on building clean,
-              scalable and high-performance web applications. I enjoy
-              creating user-friendly interfaces while ensuring the
-              backend remains efficient and maintainable.
+              Soy David, formado en el ciclo superior de desarrollo
+              de aplicaciones web con pasión en el diseño, creación
+              y programación de éstas de manera completa, desde el 
+              frontend hasta el backend.
             </p>
 
             <p class="about-text">
-              My main stack includes JavaScript, React, PHP and modern
-              web technologies. I'm passionate about continuous learning
-              and building projects that combine design, performance
-              and usability.
+              Las herramientas que principalmente uso son JavaScript,
+              React, Laravel y PHP, así como otros recursos véase 
+              Git, Docker, AWS o Firebase; utilizo todas estas, junto
+               a una gran atención al detalle a la hora de manipular 
+               los lenguajes de marcado y estilo.
             </p>
 
             <p class="about-text">
-              Currently I'm focused on improving my skills in full-stack
-              development while building personal projects and exploring
-              new technologies.
+              Ahora mismo estoy trabajando con Dormisfera, realizando
+              de manera autónoma una landing page personalizada y escalable.
+              Tengo un nivel de Inglés profesional, me considero una 
+              persona organizada, responsable y atenta, así como me 
+              siento atraído hacia la expresión artística y sus 
+              fundamentos teóricos estilísticos (color, balance, expresión, 
+              variedad, etcétera).
+            </p>
+
+            <p class="about-text">
+              Mi objetivo profesional es aumentar portfolio a la vez
+              que ayudo a otras empresas a ver sus objetivos logrados,
+              para así tener metas cada vez más ambiciosas. 
+              Considero importante señalar que en mi GitHub personal 
+              guardo todo el contenido realizado en el grado y, si 
+              quieres conocer más de mi experiencia, abajo puedes ver
+              los proyectos que he realizado detalladamente.
+            </p>
+
+            <p class="about-text">
+              Siéntete libre de ponerte en contacto conmigo para
+              cualquier posible pregunta o propuesta.
             </p>
 
           </div>
@@ -200,7 +220,7 @@ function App() {
 
             <form class="contact-form">
               <h1>Contacto</h1>
-              <p>¿Tienes una pregunta o propuesta, o solo quieres saludar? Adelante.</p>
+              <p>¿Dudas, consultas u ofertas?, este es el lugar: </p>
 
               <div class="field">
 
@@ -228,6 +248,8 @@ function App() {
 
           </div>
         </div>
+
+        <hr class="footer-line"></hr>
 
 
       </main>

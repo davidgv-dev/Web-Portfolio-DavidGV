@@ -1,44 +1,23 @@
-.night {
-  visibility: hidden;
-  margin: 0;
-  margin-top: -9vh;
-}
-
-.header-david {
-  text-align: center;
-  color: #dededf;
-  margin-right: 3vh;
-  margin-left: 3vh;
-}
-
-.lenguajes {
-  display: flex;
-  padding: 0;
-  justify-content: center;
-  gap: 5vw;
-}
-
-#lenguajes-1 {
-  margin-top: 5vh;
-}
-
-.lenguajes li {
-  list-style-type: none;
-}
-
-.lenguajes img {
-  height: 4.5vh;
-  transition: transform 0.3s ease;
-}
-
-.lenguajes a:hover img {
-  transform: translateY(-8px);
-}
+/* =========================
+   RESET / BASE
+========================= */
 
 body {
   margin: 0;
   overflow-x: hidden;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #292929;
+}
+
+
+/* =========================
+   HEADER
+========================= */
 
 header {
   background-color: #292929;
@@ -55,18 +34,98 @@ header li {
   list-style-type: none;
 }
 
+/* Título visible en móvil */
+.header-david {
+  text-align: center;
+  color: #dededf;
+  margin-right: 3vh;
+  margin-left: 3vh;
+}
+
+/* Título alternativo para pantallas grandes */
+.header-david-bigscreen {
+  visibility: hidden;
+  margin: 0;
+  margin-top: -9vh;
+}
+
+
+/* =========================
+   SECCIÓN PERFIL
+========================= */
+
+.img-perfil {
+  display: flex;
+  margin: auto;
+  margin-top: 4vh;
+
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  border-color: #cdcdcd;
+  border-style: solid;
+  border-top-color: #9e9e9e;
+  border-left-color: #9e9e9e;
+  border-right-color: #9e9e9e;
+  border-width: 0.6vh;
+
+  object-fit: cover;
+
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================
+   ICONOS DE LENGUAJES
+========================= */
+
+.lenguajes {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.lenguajes li {
+  list-style-type: none;
+}
+
+.lenguajes img {
+  height: 4.5vh;
+  transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el ratón */
+.lenguajes a:hover img {
+  transform: translateY(-8px);
+}
+
+#lenguajes-1 {
+  margin-top: 5vh;
+}
+
+
+/* =========================
+   MAIN / CONTENIDO PRINCIPAL
+========================= */
+
 main {
-  background-color: #9e9e9e;
+  background-color: #d1d1d1;
+
   min-height: 120vh;
 
-  background-color: #d1d1d1; /* gris del fondo */
   padding-left: 8vw;
   padding-right: 8vw;
   padding-top: 6vh;
   padding-bottom: 6vh;
 }
 
-/* titulo */
+
+/* =========================
+   SECCIÓN SOBRE MÍ
+========================= */
+
 .about-title {
   font-size: 2.6rem;
   font-weight: 700;
@@ -74,12 +133,13 @@ main {
   margin-bottom: 2vh;
 }
 
-/* texto */
 .about-text {
   font-size: 1.3rem;
   line-height: 1.8;
   color: #2e2e2e;
+
   max-width: 650px;
+
   margin-bottom: 2.2vh;
   font-weight: 600;
 }
@@ -87,6 +147,22 @@ main {
 .about-text:last-child {
   margin-bottom: 6vh;
 }
+
+
+/* =========================
+   LÍNEA SEPARADORA
+========================= */
+
+.footer-line {
+  border-top: 2px solid #292929;
+  margin: 60px auto;
+  opacity: 0.6;
+}
+
+
+/* =========================
+   REDES SOCIALES
+========================= */
 
 .redes {
   display: flex;
@@ -106,39 +182,13 @@ main {
   opacity: 60%;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #292929;
-}
 
-.img-perfil {
-  display: flex;
-  margin: auto;
-  margin-top: 4vh;
-
-  width: 50%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  border-color: #cdcdcd;
-  border-style: solid;
-  border-top-color: #9e9e9e;
-  border-left-color: #9e9e9e;
-  border-right-color: #9e9e9e;
-  border-width: 0.6vh;
-
-  object-fit: cover;
-
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-}
-
-/* CONTACTO */
-
+/* =========================
+   FORMULARIO DE CONTACTO
+========================= */
 
 .contact-form h1 {
   color: #1f1f1f;
-  /* azul llamativo */
   margin-bottom: 2.6vh;
   font-size: 2.6rem;
 }
@@ -147,38 +197,46 @@ main {
   margin-bottom: 30px;
   font-size: 1.3rem;
   font-weight: 600;
-
   color: #2e2e2e;
 }
 
+/* Etiquetas de los campos */
 .contact-form label {
   display: block;
   font-size: 1.1rem;
   color: #555;
+
   margin-bottom: 5px;
   margin-top: 15px;
-  font-weight: 600;
 
+  font-weight: 600;
   transition: transform 0.3s ease;
 }
 
+/* Inputs y textarea */
 .contact-form input,
 .contact-form textarea {
   width: 87%;
   padding: 10px;
+
   border: none;
   border-bottom: 1px solid #999;
+
   background-color: transparent;
   color: #333;
   font-size: 0.95rem;
+
   resize: none;
 }
 
+/* Focus de los campos */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #292929;
 }
+
+/* Animación label cuando el campo tiene focus */
 .field:focus-within label {
   transform: translateX(8px);
   color: #292929;
@@ -189,18 +247,25 @@ main {
   margin-bottom: 1.5vh;
 }
 
+/* Botón de enviar */
 .contact-form button {
   background-color: #555;
   color: #fff;
+
   border: none;
+  border-radius: 5px;
+
   padding: 12px 25px;
+
   font-size: 0.9rem;
   font-weight: 600;
+
   cursor: pointer;
-  border-radius: 5px;
+
   display: flex;
   align-items: center;
   gap: 8px;
+
   transition: background-color 0.3s ease;
 }
 
@@ -208,20 +273,33 @@ main {
   background-color: #292929;
 }
 
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* Pantallas muy bajas (ej. móviles en horizontal) */
 @media (max-height: 500px) {
+
   .img-perfil {
     width: 30%;
   }
+
   .lenguajes img {
     height: 10vh;
   }
+
   .img-redes {
     height: 15vh;
   }
+
 }
 
+
+/* Tablets */
 @media (min-width: 700px) {
-  .night {
+
+  .header-david-bigscreen {
     margin-top: -2vh;
   }
 
@@ -232,14 +310,18 @@ main {
   .contact-form p {
     font-size: 1.5rem;
   }
+
 }
 
+
+/* Desktop */
 @media (min-width: 1024px) {
+
   .perfil {
     padding-bottom: 1vh;
   }
 
-  .night {
+  .header-david-bigscreen {
     visibility: visible;
     margin-bottom: -14vh;
     margin-top: 12vh;
@@ -304,10 +386,9 @@ main {
     margin-left: 12vw;
   }
 
-  /* CONTACTO */
-
   #contenedor-principal {
     display: flex;
     flex-direction: row;
   }
+
 }
