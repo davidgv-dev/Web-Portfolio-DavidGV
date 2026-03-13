@@ -49,6 +49,30 @@ header li {
   margin-top: -9vh;
 }
 
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-language-toggle {
+  background: linear-gradient(90deg, #9e9e9e, #555);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover */
+.btn-language-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
 
 /* =========================
    SECCIÓN PERFIL
@@ -96,7 +120,6 @@ header li {
   transition: transform 0.3s ease;
 }
 
-/* Animación al pasar el ratón */
 .lenguajes a:hover img {
   transform: translateY(-8px);
 }
@@ -121,19 +144,51 @@ main {
   padding-bottom: 6vh;
 }
 
+/* =========================
+   ENLACES
+========================= */
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+a {
+  transition: transform 0.3s ease;
+}
+
+.text a,
+.title a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.text a:hover,
+.title a:hover {
+  transform: translateX(5px);
+}
+
+a:visited {
+  color: #1f1f1f;
+}
+
 
 /* =========================
    SECCIÓN SOBRE MÍ
 ========================= */
 
-.about-title {
+.title {
   font-size: 2.6rem;
   font-weight: 700;
   color: #1f1f1f;
   margin-bottom: 2vh;
 }
 
-.about-text {
+.text {
   font-size: 1.3rem;
   line-height: 1.8;
   color: #2e2e2e;
@@ -144,7 +199,7 @@ main {
   font-weight: 600;
 }
 
-.about-text:last-child {
+.text:last-child {
   margin-bottom: 6vh;
 }
 
@@ -213,7 +268,6 @@ main {
   transition: transform 0.3s ease;
 }
 
-/* Inputs y textarea */
 .contact-form input,
 .contact-form textarea {
   width: 87%;
@@ -229,14 +283,12 @@ main {
   resize: none;
 }
 
-/* Focus de los campos */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #292929;
 }
 
-/* Animación label cuando el campo tiene focus */
 .field:focus-within label {
   transform: translateX(8px);
   color: #292929;
@@ -247,7 +299,6 @@ main {
   margin-bottom: 1.5vh;
 }
 
-/* Botón de enviar */
 .contact-form button {
   background-color: #555;
   color: #fff;
@@ -273,6 +324,55 @@ main {
   background-color: #292929;
 }
 
+/* =========================
+   OVERLAY IMÁGENES
+========================= */
+
+.imagenes {
+  flex: 1 1 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img {
+  cursor: pointer;
+  height: 60vw;
+  object-fit: cover;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(190, 180, 180, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  cursor: auto;
+  transition: transform 0.1s ease;
+}
 
 /* =========================
    MEDIA QUERIES
@@ -303,7 +403,7 @@ main {
     margin-top: -2vh;
   }
 
-  .about-text {
+  .text {
     font-size: 1.5rem;
   }
 
@@ -331,6 +431,10 @@ main {
 
   .header-david {
     visibility: hidden;
+  }
+
+  .btn-language-toggle {
+    margin-left: 5vw;
   }
 
   #lenguajes-1 {
@@ -378,7 +482,7 @@ main {
     margin-left: -37%;
   }
 
-  .about-text {
+  .text {
     max-width: 40vw;
   }
 
@@ -386,9 +490,22 @@ main {
     margin-left: 12vw;
   }
 
-  #contenedor-principal {
+  .contenedor-principal {
     display: flex;
     flex-direction: row;
+  }
+
+  .imagenes {
+    margin-left: 8vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
 }
