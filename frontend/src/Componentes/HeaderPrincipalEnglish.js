@@ -1,4 +1,4 @@
-
+import { useEffect } from 'react';
 import imgPerfil from '../imgs/imgPerfil.jpeg';
 import react96 from '../imgs/lenguajes/react-96.png';
 import github96_lang from '../imgs/lenguajes/github-96.png';
@@ -22,13 +22,71 @@ import email96 from '../imgs/mail-96.png';
 import whatsapp48 from '../imgs/whatsapp-logo-48.png';
 import whatsapp96 from '../imgs/whatsapp-96.png';
 
+import anime from 'animejs';
+
 function HeaderPrincipalEnglish({ toggleLanguage }) {
+
+    // AnimeJS animation
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            // Detect which version is visible (mobile or desktop)
+            const elementBig = document.querySelector('.header-david-bigscreen');
+            const elementMobile = document.querySelector('.header-david');
+            const isMobile = window.getComputedStyle(elementMobile).visibility !== 'hidden';
+
+            if (isMobile && elementMobile) {
+                // Mobile animation only
+                const text = elementMobile.textContent;
+                elementMobile.innerHTML = text
+                    .split('')
+                    .map((char) => `<span style="opacity: 0;">${char}</span>`)
+                    .join('');
+
+                const timeline = anime.timeline({ defaults: { duration: 650, easing: 'easeInOutQuad' } });
+                timeline
+                    .add({
+                        targets: '.header-david span',
+                        opacity: [0, 1],
+                        delay: anime.stagger(40),
+                    }, 0)
+                    .add({
+                        targets: '#lenguajes-1, #lenguajes-2',
+                        opacity: [0, 1],
+                        duration: 10500,
+                    }, 100);
+            } else if (!isMobile && elementBig) {
+                // Desktop animation only
+                const text = elementBig.textContent;
+                elementBig.innerHTML = text
+                    .split('')
+                    .map((char) => `<span style="opacity: 0;">${char}</span>`)
+                    .join('');
+
+                const timeline = anime.timeline({ defaults: { duration: 650, easing: 'easeInOutQuad' } });
+                timeline
+                    .add({
+                        targets: '.header-david-bigscreen span',
+                        opacity: [0, 1],
+                        delay: anime.stagger(40),
+                    }, 0)
+                    .add({
+                        targets: '#lenguajes-1, #lenguajes-2',
+                        opacity: [0, 1],
+                        duration: 10500,
+                    }, 100);
+            }
+        }, 50);
+
+        return () => clearTimeout(timer);
+    }, []);
   return (
 
     <>
         
         <div className="perfil">
-            <h1 className="header-david-bigscreen">David, full stack web developer</h1>
+            <div id="text-split">
+                <h1 className="header-david-bigscreen">David, full stack web developer</h1>
+            </div>
 
             <ul className="lenguajes" id="lenguajes-1">
             <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><img src={js96} alt="Icono Javascript"/></a></li>
@@ -49,7 +107,9 @@ function HeaderPrincipalEnglish({ toggleLanguage }) {
             </ul>
 
             <img src={imgPerfil} className="img-perfil" alt="imagen perfil" />
-            <h1 className="header-david">David, full stack web developer</h1>
+            <div id="text-split-mobile">
+                <h1 className="header-david">David, full stack web developer</h1>
+            </div>
         </div>
 
         <header className="App-header">
