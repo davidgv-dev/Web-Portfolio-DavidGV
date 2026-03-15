@@ -120,6 +120,7 @@ function MainPrincipalCastellano() {
           <p className="text">Desarrollada en React con JavaScript, hosteada con Firebase y guardando los datos en Firestore; utiliza una base de datos inmensa de juegos, la API de IGDB (Internet Game Database).</p>
           <p className="text">Permite inicio de sesión y registro para cuentas individuales, así como la creación, lectura, actualización y borrado de videojuegos enlazados a cada una de ellas.</p>
           <p className="text"><a href="https://github.com/Kaladin000/Keep-Games-Alive#user-content-keep-games-alive---david-garc%C3%ADa-valero" target="_blank" rel="noopener noreferrer">Más información</a></p>
+          <p className="text"><a href="https://keep-games-alive.web.app/" target="_blank" rel="noopener noreferrer">Sitio web</a></p>
         </div>
         <div className="imagenes">
           <AgrandarImagen src={p1img1} className="img" alt="imagen 1, proyecto 1"/>
@@ -137,7 +138,7 @@ function MainPrincipalCastellano() {
         <div className="proyecto">
           <h2 className="title"><a href="https://github.com/Kaladin000/videojuegosLaravel#user-content-sistema-web-de-gesti%C3%B3n-de-videojuegos-laravel" target="_blank" rel="noopener noreferrer">API Videojuegos Laravel</a></h2>
           <p className="text">
-            Este backend es una API a la cuál se le pueden hacer peticiones, muy parecido al anterior proyecto. En vez de guardar por usuario, aquí hago el CRUD globalmente en una única API.</p>
+            Este backend es una API a la cual se le pueden hacer peticiones, muy parecido al anterior proyecto. En vez de guardar por usuario, aquí hago el CRUD globalmente en una única API.</p>
           <p className="text">Sigue la arquitectura de módulos y controladores, factorías y seeders y usa valores reales (empresas de videojuegos) en formato csv.</p>
           <p className="text">Utilizo Requests para asignar permisos de uso de la api y soporta autenticación de usuarios (mediante Bearer Tokens). Todo este proyecto utiliza Postgre para el almacenamiento y manipulación de datos.</p>
           <p className="text"><a href="https://github.com/Kaladin000/videojuegosLaravel#user-content-sistema-web-de-gesti%C3%B3n-de-videojuegos-laravel" target="_blank" rel="noopener noreferrer">Más información</a></p>

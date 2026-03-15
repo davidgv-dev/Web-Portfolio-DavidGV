@@ -1,5 +1,3 @@
-import React from 'react';
-import { useState } from 'react';
 
 import imgPerfil from '../imgs/imgPerfil.jpeg';
 import react96 from '../imgs/lenguajes/react-96.png';
@@ -51,7 +49,7 @@ function HeaderPrincipalEnglish({ toggleLanguage }) {
             </ul>
 
             <img src={imgPerfil} className="img-perfil" alt="imagen perfil" />
-            <h1 className="header-david">David, desarrollador web full stack</h1>
+            <h1 className="header-david">David, full stack web developer</h1>
         </div>
 
         <header className="App-header">

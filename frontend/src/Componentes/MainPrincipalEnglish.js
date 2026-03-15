@@ -146,6 +146,7 @@ function MainPrincipalEnglish() {
               More information
             </a>
           </p>
+          <p className="text"><a href="https://keep-games-alive.web.app/" target="_blank" rel="noopener noreferrer">Website</a></p>
         </div>
         <div className="imagenes">
           <AgrandarImagen src={p1img1} className="img" alt="image 1, project 1"/>

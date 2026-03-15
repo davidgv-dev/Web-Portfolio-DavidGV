@@ -333,9 +333,6 @@ a:visited {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   gap: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .img {
@@ -378,6 +375,20 @@ a:visited {
    MEDIA QUERIES
 ========================= */
 
+/* Móvil (portrait) */
+@media (max-width: 699px) {
+
+  header {
+    padding-bottom: 2vh;
+  }
+
+  .redes {
+    margin-top: 5%;
+  }
+
+}
+
+
 /* Pantallas muy bajas (ej. móviles en horizontal) */
 @media (max-height: 500px) {
 
@@ -391,6 +402,10 @@ a:visited {
 
   .img-redes {
     height: 15vh;
+  }
+
+  .btn-language-toggle {
+    margin-top: -4vw;
   }
 
 }
