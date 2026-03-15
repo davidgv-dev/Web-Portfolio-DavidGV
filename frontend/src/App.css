@@ -330,8 +330,8 @@ a:visited {
 
 .imagenes {
   flex: 1 1 400px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
