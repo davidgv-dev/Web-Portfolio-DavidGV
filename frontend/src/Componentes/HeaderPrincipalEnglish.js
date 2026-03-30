@@ -115,7 +115,7 @@ function HeaderPrincipalEnglish({ toggleLanguage }) {
         <header className="App-header">
             <div className="redes-div">
             <ul className="redes">
-                <li><a href="https://github.com/Kaladin000" target="_blank" rel="noopener noreferrer"><img src={github48} srcSet={`${github48} 48w, ${github96} 96w`} sizes="(min-width: 768px) 96px, 48px" className="img-redes" alt="Icono GitHub"/></a></li>
+                <li><a href="https://github.com/davidgv-dev" target="_blank" rel="noopener noreferrer"><img src={github48} srcSet={`${github48} 48w, ${github96} 96w`} sizes="(min-width: 768px) 96px, 48px" className="img-redes" alt="Icono GitHub"/></a></li>
                 <li><a href="https://www.linkedin.com/in/david-garc%C3%ADa-valero-64889520a/" target="_blank" rel="noopener noreferrer"><img src={linkedin48} srcSet={`${linkedin48} 48w, ${linkedin96} 96w`} sizes="(min-width: 768px) 96px, 48px" className="img-redes" alt="Icono LinkedIn"/></a></li>
                 <li><a href="mailto:davidgarciavalero@gmail.com"><img src={email48} srcSet={`${email48} 48w, ${email96} 96w`} sizes="(min-width: 768px) 96px, 48px" className="img-redes" alt="Icono Email"/></a></li>
                 <li><a href="https://wa.me/34688705410?text=Hello%20David,%20I%20have%20the%20following%20proposal:" target="_blank" rel="noopener noreferrer"><img src={whatsapp48} srcSet={`${whatsapp48} 48w, ${whatsapp96} 96w`} sizes="(min-width: 768px) 96px, 48px" className="img-redes" alt="Icono WhatsApp"/></a></li>
