@@ -173,6 +173,10 @@ a {
   transform: translateX(5px);
 }
 
+.text a.dormisfera-link:hover {
+  transform: translateY(-5px);
+}
+
 a:visited {
   color: #1f1f1f;
 }

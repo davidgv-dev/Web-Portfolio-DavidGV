@@ -63,7 +63,7 @@ function MainPrincipalEnglish() {
             The main tools I use are JavaScript, React, Laravel, and PHP, as well as other resources like Git, Docker, AWS, or Firebase; I use all of these along a great attention to detail when handling markup and styling languages.
           </p>
           <p className="text">
-            I’m currently working with Dormisfera, independently developing a custom and scalable landing page. I have a professional level of English and I consider myself organized, responsible, and attentive, and I’m drawn to artistic expression and its theoretical and stylistic foundations (color, balance, expression, variety, etc.).
+            I’m currently working with <a href="https://dormisfera.com/" target="_blank" rel="noopener noreferrer" className="dormisfera-link">Dormisfera</a>, independently developing a custom and scalable landing page. I have a professional level of English and I consider myself organized, responsible, and attentive, and I’m drawn to artistic expression and its theoretical and stylistic foundations (color, balance, expression, variety, etc.).
           </p>
           <p className="text">
             My professional goal is to expand my portfolio while helping other companies achieve their goals, setting increasingly ambitious goals. It’s worth noting that my personal GitHub contains all the content from my degree, and if you want to learn more about my experience, below you can see detailed information about projects I’ve completed.
